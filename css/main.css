@@ -70,7 +70,7 @@ h1 {
   font-size: 20px;
   font-weight: 400;
   margin-top: 40px;
-  margin-bottom: 20px; }
+  margin-bottom: 5px; }
 
 .logo, footer span {
   font-family: 'Bowlby One SC', cursive;
@@ -123,7 +123,8 @@ form button, form a {
     background: #af9387; }
 
 .login {
-  background: #558C88; }
+  background: #558C88;
+  text-align: center; }
   .login .container {
     height: 1080px; }
   .login form, .login logo {
@@ -138,12 +139,28 @@ form button, form a {
     font-family: 'Bowlby One SC', cursive;
     color: rgba(255, 255, 255, 0.2);
     font-size: 50px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 40px; }
   .login .signup {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px; }
+
+.login-pic {
+  width: 100px;
+  border-radius: 100px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px; }
+
+.profile-pic {
+  float: right;
+  width: 50px;
+  border-radius: 50px;
+  border: 5px solid #fff;
+  right: 5px;
+  top: 0;
+  position: absolute;
+  text-align: center; }
 
 .tracks {
   background-color: #ececec;
@@ -169,15 +186,6 @@ a.add {
   margin-left: 20px;
   color: #fff; }
 
-.profile-pic {
-  float: right;
-  width: 50px;
-  border-radius: 50px;
-  border: 5px solid #fff;
-  right: 5px;
-  top: 0;
-  position: absolute; }
-
 footer {
   height: 60px;
   line-height: 60px;
@@ -188,6 +196,10 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 11px; }
+
+.add-page .content p {
+  margin-top: 0;
+  color: #666; }
 
 /* ==========================================================================
 Media Queries
