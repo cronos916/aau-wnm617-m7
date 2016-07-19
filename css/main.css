@@ -1,29 +1,26 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Bowlby+One+SC';
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+  background: #b3d4fc;
+  text-shadow: none; }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
 
 audio,
 canvas,
@@ -31,171 +28,222 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
-}
+  vertical-align: middle; }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 textarea {
-    resize: vertical;
-}
+  resize: vertical; }
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
+img {
+  max-width: 100%; }
 
-#map_canvas{
+input, button, a {
+  outline: 0; }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.logo {
+  font-family: 'Bowlby One SC', cursive;
+  color: rgba(255, 255, 255, 0.3); }
+
+a.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3); }
+
+.back {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold; }
+
+header {
+  height: 60px;
+  line-height: 60px;
+  background: #558C88; }
+  header p {
+    margin: 0; }
+  header .logo {
+    float: right; }
+
+#map_canvas {
   width: 100%;
-  height: 600px;
-}
+  height: 500px; }
 
+form input, form button, form a {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  margin-bottom: 1px;
+  background: #f5f5f5; }
 
+form button, form a {
+  margin-top: 20px;
+  border-radius: 3px;
+  background: #c4aea5;
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none; }
+  form button:hover, form button:active, form a:hover, form a:active {
+    background: #af9387; }
 
+.login {
+  background: #558C88; }
+  .login .container {
+    height: 1080px; }
+  .login form, .login logo {
+    width: 60%;
+    margin: 0 auto; }
+    .login form button, .login form a, .login logo button, .login logo a {
+      background: rgba(255, 255, 255, 0.2); }
+      .login form button:hover, .login form button:active, .login form a:hover, .login form a:active, .login logo button:hover, .login logo button:active, .login logo a:hover, .login logo a:active {
+        background: rgba(255, 255, 255, 0.1); }
+  .login .logo {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .login .signup {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px; }
 
+.tracks {
+  background-color: #ececec;
+  margin-bottom: 1px;
+  padding: 10px 20px;
+  position: relative; }
+  .tracks:hover {
+    background-color: #e0e0e0; }
+  .tracks a {
+    color: #333;
+    text-decoration: none; }
+  .tracks p {
+    margin: 0; }
+  .tracks i {
+    position: absolute;
+    right: 20px;
+    top: 40%; }
 
-
-
-
-
-
-
+.tracked #map_canvas {
+  height: 200px; }
 
 /* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
-
+Media Queries
+========================================================================== */
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
+Helper classes
+========================================================================== */
 .hidden {
-    display: none !important;
-    visibility: hidden;
-}
+  display: none !important;
+  visibility: hidden; }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
 
 .invisible {
-    visibility: hidden;
-}
+  visibility: hidden; }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+.clearfix:before, header:before,
+.clearfix:after,
+header:after {
+  content: " ";
+  display: table; }
 
-.clearfix:after {
-    clear: both;
-}
+.clearfix:after, header:after {
+  clear: both; }
 
-.clearfix {
-    *zoom: 1;
-}
+.clearfix, header {
+  *zoom: 1; }
 
 /* ==========================================================================
-   Print styles
-   ========================================================================== */
-
+Print styles
+========================================================================== */
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
